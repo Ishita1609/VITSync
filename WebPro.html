@@ -1,0 +1,1175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Exchange - Frontend Demo</title >
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg demo-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: white;">VIT<span>SYNC</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" onclick="showPage('home'); return false;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('marketplace'); return false;">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('about-us'); return false;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('contact-us'); return false;">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('login'); return false;">
+                            <i class="bi bi-person-circle"></i> Login
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center ms-2">
+                       
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="home" class="demo-container">
+            <div class="hero-banner mb-5">
+                <div class="container">
+                    <span class="best-offer">FEATURED PROJECTS</span>
+                    <h1>EXPLORE INNOVATIVE PROJECTS</h1>
+                    <p>Join our community of creators sharing hardware and software projects to inspire and collaborate.</p>
+                    <a href="#" onclick="showPage('marketplace'); return false;" class="btn btn-primary btn-lg">Browse Projects</a>
+                </div>
+            </div>
+
+            <div class="container">
+       
+                <div class="mb-5">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                        <div class="col">
+                            <div class="card h-100 listing-card">
+                                <div class="card-img-top bg-light text-center py-4">
+                                    <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Machine Learning" class="img-fluid" style="height: 180px; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Image Recognition ML</h5>
+                                    <p class="card-text text-muted small">TensorFlow-based image classification system...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-danger">Expert</span>
+                                        <button class="btn btn-sm btn-outline-primary">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col">
+                            <div class="card h-100 listing-card">
+                                <div class="card-img-top bg-light text-center py-4">
+                                    <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Drone Project" class="img-fluid" style="height: 180px; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">DIY Drone Kit</h5>
+                                    <p class="card-text text-muted small">Custom drone build with programmable flight controls...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-warning">Advanced</span>
+                                        <button class="btn btn-sm btn-outline-primary">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 listing-card">
+                                <div class="card-img-top bg-light text-center py-4">
+                                    <img src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Coding Project" class="img-fluid" style="height: 180px; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">API Development</h5>
+                                    <p class="card-text text-muted small">RESTful API design with authentication and documentation...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-info">Intermediate</span>
+                                        <button class="btn btn-sm btn-outline-primary">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 listing-card">
+                                <div class="card-img-top bg-light text-center py-4">
+                                    <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Robotics Project" class="img-fluid" style="height: 180px; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Line Following Robot</h5>
+                                    <p class="card-text text-muted small">Simple robotics project with Arduino and IR sensors...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-success">Beginner</span>
+                                        <button class="btn btn-sm btn-outline-primary">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 listing-card">
+                                <div class="card-img-top bg-light text-center py-4">
+                                    <img src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Smart Home Project" class="img-fluid" style="height: 180px; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Smart Garden System</h5>
+                                    <p class="card-text text-muted small">IoT-based plant monitoring and watering system...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-info">Intermediate</span>
+                                        <button class="btn btn-sm btn-outline-primary">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 listing-card">
+                                <div class="card-img-top bg-light text-center py-4">
+                                    <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Game Development" class="img-fluid" style="height: 180px; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">2D Game Development</h5>
+                                    <p class="card-text text-muted small">Unity-based platformer game with custom assets...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-warning">Advanced</span>
+                                        <button class="btn btn-sm btn-outline-primary">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 listing-card">
+                                <div class="card-img-top bg-light text-center py-4">
+                                    <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Raspberry Pi Project" class="img-fluid" style="height: 180px; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Smart Home Hub</h5>
+                                    <p class="card-text text-muted small">Raspberry Pi-based home automation system with voice control...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-info">Intermediate</span>
+                                        <button class="btn btn-sm btn-outline-primary" onclick="showPage('listing-detail')">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 listing-card">
+                                <div class="card-img-top bg-light text-center py-4">
+                                    <img src="https://images.unsplash.com/photo-1623479322729-28b25c16b011?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Web Development Project" class="img-fluid" style="height: 180px; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">E-commerce Platform</h5>
+                                    <p class="card-text text-muted small">Full-stack web app with React, Node.js and MongoDB...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-info">Intermediate</span>
+                                        <button class="btn btn-sm btn-outline-primary">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 py-4">
+                    <h2 class="section-title">Community Testimonials</h2>
+                    <div class="row g-4">
+                        
+                    </div>
+                </div>
+               
+                <footer class="mt-5 pt-5 pb-4 bg-light">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 mb-4">
+                                <h5 class="mb-3">About VITSync</h5>
+                                <p class="text-muted">VITSync is a community-based platform that helps people sync in together and share hardware and software projects, fostering innovation and collaboration among creators.</p>
+                                <div class="social-icons mt-3">
+                                    <a href="#" class="me-2 text-dark"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="me-2 text-dark"><i class="bi bi-twitter"></i></a>
+                                    <a href="#" class="me-2 text-dark"><i class="bi bi-instagram"></i></a>
+                                    <a href="#" class="me-2 text-dark"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 mb-4">
+                                <h5 class="mb-3">Quick Links</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Home</a></li>
+                                    <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Projects</a></li>
+                                    <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Community</a></li>
+                                    <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Events</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2 col-md-4 mb-4">
+                                <h5 class="mb-3">Support</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Help Center</a></li>
+                                    <li class="mb-2"><a href="#" class="text-decoration-none text-muted">FAQs</a></li>
+                                    <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-4 mb-4">
+                                <h5 class="mb-3">Connect with us</h5>
+                                <p class="text-muted">Have questions? Reach out to us, we’d love to hear from you!</p>
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control" placeholder="Your email" aria-label="Your email">
+                                    <button class="btn btn-primary" type="button">Connect</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <div id="marketplace" class="demo-container" style="display: none;">
+            <div class="page-title">Projects</div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Filters</h5>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Skill Level</label>
+                                    <select name="type" class="form-select">
+                                        <option value="">All Complexities</option>
+                                        <option >Beginner</option>
+                                        <option >Intermediate</option>
+                                        <option >Advance</option>
+                                        <option >Expert</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Project Type</label>
+                                    <select name="type" class="form-select">
+                                        <option value="">All Types</option>
+                                        <option value="hardware">Hardware</option>
+                                        <option value="software">Software</option>
+                                        <option value="mixed">Mixed</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Category</label>
+                                    <select name="category" class="form-select">
+                                        <option value="">All Categories</option>
+                                        <option value="iot">IoT</option>
+                                        <option value="web">Web Development</option>
+                                        <option value="mobile">Mobile Apps</option>
+                                        <option value="robotics">Robotics</option>
+                                        <option value="ai">AI/ML</option>
+                                        <option value="embedded">Embedded Systems</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Location</label>
+                                    <input type="text" name="location" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="freeItemsOnly">
+                                        <label class="form-check-label" for="freeItemsOnly">
+                                            Only On Campus centric projects
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="localPickupOnly">
+                                        <label class="form-check-label" for="localPickupOnly">
+                                            No additional costs involved
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Apply Filters</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div>
+                            <span class="text-muted">Showing 1-12 of 48 projects</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <select class="form-select form-select-sm">
+                                <option>Sort by: Newest</option>
+                                <option>Sort by: Difficulty (Low to High)</option>
+                                <option>Sort by: Difficulty (High to Low)</option>
+                                <option>Sort by: Most Popular</option>
+                            </select>
+                            <button class="btn btn-sm btn-outline-primary" onclick="showPage('create-listing'); return false;">
+                                <i class="bi bi-plus-circle"></i> Create Project
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card h-100 listing-card">
+                                <div class="card-img-top bg-light text-center py-4">
+                                    <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Drone Project" class="img-fluid" style="height: 180px; object-fit: cover;">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h5 class="card-title">Image Recognition ML                                    </h5>
+                                    <p class="card-text text-muted small">TensorFlow-based image classification system...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-warning">Advanced</span>
+                                        <button class="btn btn-sm btn-outline-primary" onclick="showPage('listing-detail'); return false;">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100 listing-card">
+                                <div class="card-img-top bg-light text-center py-4">
+                                    <img src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Coding Project" class="img-fluid" style="height: 180px; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">API Development</h5>
+                                    <p class="card-text text-muted small">RESTful API design with authentication and documentation...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-info">Intermediate</span>
+                                        <button class="btn btn-sm btn-outline-primary">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100 listing-card">
+                                <div class="card-img-top bg-light text-center py-4">
+                                    <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Robotics Project" class="img-fluid" style="height: 180px; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Line Following Robot</h5>
+                                    <p class="card-text text-muted small">Simple robotics project with Arduino and IR sensors...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-success">Beginner</span>
+                                        <button class="btn btn-sm btn-outline-primary">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100 listing-card">
+                                <div class="card-img-top bg-light text-center py-4">
+                                    <img src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Smart Home Project" class="img-fluid" style="height: 180px; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Smart Garden System</h5>
+                                    <p class="card-text text-muted small">IoT-based plant monitoring and watering system...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-info">Intermediate</span>
+                                        <button class="btn btn-sm btn-outline-primary">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100 listing-card">
+                                <div class="card-img-top bg-light text-center py-4">
+                                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mobile App Project" class="img-fluid" style="height: 180px; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Mobile App Development</h5>
+                                    <p class="card-text text-muted small">React Native mobile app with Firebase backend...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-warning">Advanced</span>
+                                        <button class="btn btn-sm btn-outline-primary">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100 listing-card">
+                                <div class="card-img-top bg-light text-center py-4">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Arduino Project" class="img-fluid" style="height: 180px; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Arduino Weather Station</h5>
+                                    <p class="card-text text-muted small">DIY weather monitoring system with multiple sensors...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-success">Beginner</span>
+                                        <button class="btn btn-sm btn-outline-primary">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100 listing-card">
+                                <div class="card-img-top bg-light text-center py-4">
+                                    <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Machine Learning Project" class="img-fluid" style="height: 180px; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">DIY Drone Kit</h5>
+                                    <p class="card-text text-muted small">We have a drone kit </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-danger">Expert</span>
+                                        <button class="btn btn-sm btn-outline-primary">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100 listing-card">
+                                <div class="card-img-top bg-light text-center py-4">
+                                    <img src="https://images.unsplash.com/photo-1623479322729-28b25c16b011?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Web Development Project" class="img-fluid" style="height: 180px; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">E-commerce Platform</h5>
+                                    <p class="card-text text-muted small">Full-stack web app with React, Node.js and MongoDB...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-info">Intermediate</span>
+                                        <button class="btn btn-sm btn-outline-primary">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div id="login" class="demo-container" style="display: none;">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <h2 class="text-center mb-4">Login</h2>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Login</button>
+                            </form>
+                            <div class="text-center mt-3">
+                                <a href="#" class="text-decoration-none">Forgot password?</a>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <p>Don't have an account?</p>
+                                <button class="btn btn-outline-primary" onclick="showPage('register'); return false;">Create Account</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="register" class="demo-container" style="display: none;">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <h2 class="text-center mb-4">Create Account</h2>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerEmail" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="registerEmail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="registerPassword" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="confirmPassword" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="termsAgree" required>
+                                    <label class="form-check-label" for="termsAgree">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                            </form>
+                            <hr>
+                            <div class="text-center">
+                                <p>Already have an account?</p>
+                                <button class="btn btn-outline-primary" onclick="showPage('login'); return false;">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about-us" class="demo-container" style="display: none;">
+            <div class="container py-5">
+                <h1 class="text-center mb-5">About Us</h1>
+                
+                <div class="row mb-5">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Our Team" class="img-fluid rounded shadow">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="mb-4">Our Mission</h2>
+                        <p class="lead">To create a vibrant community where makers, developers, and innovators can share projects, exchange ideas, and collaborate on hardware and software solutions.</p>
+                        <p>Community Exchange was founded in 2023 with a simple idea: to connect people who build things. Whether you're a hardware enthusiast, software developer, or just someone with a passion for creating, our platform provides the tools and community to help you succeed.</p>
+                        <p>We believe in the power of open collaboration and knowledge sharing to accelerate innovation and make technology more accessible to everyone.</p>
+                    </div>
+                </div>
+                
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="text-center mb-4">Our Values</h2>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center p-4">
+                                        <div class="mb-3">
+                                            <i class="bi bi-people-fill text-primary" style="font-size: 2.5rem;"></i>
+                                        </div>
+                                        <h4>Community First</h4>
+                                        <p class="text-muted">We prioritize building a supportive, inclusive community where everyone feels welcome to contribute.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center p-4">
+                                        <div class="mb-3">
+                                            <i class="bi bi-lightbulb-fill text-primary" style="font-size: 2.5rem;"></i>
+                                        </div>
+                                        <h4>Innovation</h4>
+                                        <p class="text-muted">We encourage creative thinking and novel approaches to solving problems through technology.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center p-4">
+                                        <div class="mb-3">
+                                            <i class="bi bi-share-fill text-primary" style="font-size: 2.5rem;"></i>
+                                        </div>
+                                        <h4>Knowledge Sharing</h4>
+                                        <p class="text-muted">We believe in openly sharing expertise and learning from each other's experiences.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center mb-4">Our Team</h2>
+                        <div class="row g-4">
+                            <div class="col-md-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="https://randomuser.me/api/portraits/women/32.jpg" class="card-img-top" alt="Team Member">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Krishika Sureka</h5>
+                                        <p class="card-text text-muted">Founder & CEO</p>
+                                        <div class="social-icons">
+                                            <a href="#" class="text-muted me-2"><i class="bi bi-linkedin"></i></a>
+                                            <a href="#" class="text-muted me-2"><i class="bi bi-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="https://randomuser.me/api/portraits/men/45.jpg" class="card-img-top" alt="Team Member">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Manan Arora
+                                        </h5>
+                                        <p class="card-text text-muted">CTO</p>
+                                        <div class="social-icons">
+                                            <a href="#" class="text-muted me-2"><i class="bi bi-linkedin"></i></a>
+                                            <a href="#" class="text-muted me-2"><i class="bi bi-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" class="card-img-top" alt="Team Member">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Samya Meheta</h5>
+                                        <p class="card-text text-muted">Head of Design</p>
+                                        <div class="social-icons">
+                                            <a href="#" class="text-muted me-2"><i class="bi bi-linkedin"></i></a>
+                                            <a href="#" class="text-muted me-2"><i class="bi bi-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="https://randomuser.me/api/portraits/men/22.jpg" class="card-img-top" alt="Team Member">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Kabir Sharma</h5>
+                                        <p class="card-text text-muted">Community Manager</p>
+                                        <div class="social-icons">
+                                            <a href="#" class="text-muted me-2"><i class="bi bi-linkedin"></i></a>
+                                            <a href="#" class="text-muted me-2"><i class="bi bi-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-us" class="demo-container" style="display: none;">
+            <div class="container py-5">
+                <h1 class="text-center mb-5">Contact Us</h1>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <h3 class="card-title mb-4">Get in Touch</h3>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="contactName" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control" id="contactName" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="contactEmail" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="contactEmail" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="contactSubject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="contactSubject" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="contactMessage" class="form-label">Message</label>
+                                        <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <h3 class="card-title mb-4">Contact Information</h3>
+                                <div class="d-flex mb-4">
+                                    <div class="me-3">
+                                        <i class="bi bi-geo-alt-fill text-primary fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Address</h5>
+                                        <p class="text-muted">Vellore Institute of Technology</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-4">
+                                    <div class="me-3">
+                                        <i class="bi bi-envelope-fill text-primary fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Email</h5>
+                                        <p class="text-muted">info@vitsync.com<br>support@vitsync.com</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-4">
+                                    <div class="me-3">
+                                        <i class="bi bi-telephone-fill text-primary fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Phone</h5>
+                                        <p class="text-muted">+91 6291731361<br>+91 9370091896</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <i class="bi bi-clock-fill text-primary fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Working Hours</h5>
+                                        <p class="text-muted">Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 2:00 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-5">
+                    <h3 class="text-center mb-4">Find Us</h3>
+                    <div class="ratio ratio-21x9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0968143526147!2d-122.41941548468204!3d37.77492997975903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1626285496026!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="listing-detail" class="demo-container" style="display: none;">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h2 class="card-title mb-0">Image Recognition ML</h2>
+                                <span class="badge bg-warning fs-5">Advanced</span>
+                            </div>
+                            <p class="text-muted mb-4">Posted 5 days ago in AI/ML</p>
+                            
+                            <div class="mb-4">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project Image" class="img-fluid rounded">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Project Details</h5>
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-2"><strong>Type:</strong> <span class="text-muted">Software</span></li>
+                                                    <li class="mb-2"><strong>Difficulty:</strong> <span class="text-muted">Advanced</span></li>
+                                                    <li class="mb-2"><strong>Est. Time:</strong> <span class="text-muted">20-30 hours</span></li>
+                                                    <li class="mb-2"><strong>Technologies:</strong> <span class="text-muted">TensorFlow, Python, OpenCV</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-muted mb-4">Posted 5 days ago in Machine Learning</p>
+                            
+                            <div class="mb-4">
+                                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100 rounded" alt="Data Visualization">
+                            </div>
+
+                            <h4>Description</h4>
+                            <p>
+                                A TensorFlow-based image classification system that can identify objects in images with high accuracy. This project implements a convolutional neural network (CNN) trained on a large dataset of labeled images.
+                            </p>
+                            <p>
+                                The system includes pre-processing modules for image normalization, data augmentation techniques to improve model robustness, and a user-friendly interface for testing the model on new images.
+                            </p>
+                            <p>
+                                Perfect for AI enthusiasts or developers looking to understand deep learning applications in computer vision. The code is well-documented and includes Jupyter notebooks explaining the model architecture and training process.
+                            </p>
+                            
+                            <h4 class="mt-4">Features</h4>
+                            <ul>
+                                <li>Multi-class image classification with 90%+ accuracy</li>
+                                <li>Real-time object detection capabilities</li>
+                                <li>Transfer learning implementation using pre-trained models</li>
+                                <li>Detailed documentation and visualization tools</li>
+                                <li>Optimized for both CPU and GPU environments</li>
+                            </ul>
+                            
+                            <div class="text-center mt-3">
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#collaboratorModal">
+                                    <i class="bi bi-people"></i> Join as Collaborator
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Collaborators</h5>
+                            <p class="small text-muted mb-3">Team members who contributed to this project</p>
+                            
+                            <div class="d-flex align-items-center mb-3 pb-2 border-bottom">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Collaborator" class="rounded-circle me-2" width="40" height="40">
+                                <div>
+                                    <h6 class="mb-0 small">Ayushi Sureka</h6>
+                                    <p class="text-muted mb-0 small">Lead Developer</p>
+                                </div>
+                                <span class="badge bg-info ms-auto">20 commits</span>
+                            </div>
+                            
+                            <div class="d-flex align-items-center mb-3 pb-2 border-bottom">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Collaborator" class="rounded-circle me-2" width="40" height="40">
+                                <div>
+                                    <h6 class="mb-0 small">Tushar Khemka</h6>
+                                    <p class="text-muted mb-0 small">Hardware Engineer</p>
+                                </div>
+                                <span class="badge bg-info ms-auto">15 commits</span>
+                            </div>
+                            
+                            <div class="d-flex align-items-center mb-3 pb-2 border-bottom">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Collaborator" class="rounded-circle me-2" width="40" height="40">
+                                <div>
+                                    <h6 class="mb-0 small">Avani Sikaria</h6>
+                                    <p class="text-muted mb-0 small">UI/UX Designer</p>
+                                </div>
+                                <span class="badge bg-info ms-auto">8 commits</span>
+                            </div>
+                            
+                            <div class="d-flex align-items-center">
+                                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Collaborator" class="rounded-circle me-2" width="40" height="40">
+                                <div>
+                                    <h6 class="mb-0 small">Manan Goel</h6>
+                                    <p class="text-muted mb-0 small">Documentation</p>
+                                </div>
+                                <span class="badge bg-info ms-auto">5 commits</span>
+                            </div>
+                            
+                            <div class="text-center mt-3">
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#collaboratorModal">
+                                    <i class="bi bi-people"></i> Join as Collaborator
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+        <div id="create-listing" class="demo-container" style="display: none;">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-center mb-4">Create New Project</h2>
+                            <form>
+                                <div class="mb-4">
+                                    <h5>Basic Information</h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="listingTitle" class="form-label">Project Title</label>
+                                            <input type="text" class="form-control" id="listingTitle" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="listingCategory" class="form-label">Category</label>
+                                            <select class="form-select" id="listingCategory" required>
+                                                <option value="" selected disabled>Select a category</option>
+                                                <option value="iot">IoT</option>
+                                                <option value="web">Web Development</option>
+                                                <option value="mobile">Mobile Apps</option>
+                                                <option value="robotics">Robotics</option>
+                                                <option value="ai">AI/ML</option>
+                                                <option value="embedded">Embedded Systems</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="projectType" class="form-label">Project Type</label>
+                                            <select class="form-select" id="projectType">
+                                                <option value="hardware">Hardware</option>
+                                                <option value="software">Software</option>
+                                                <option value="mixed">Hardware & Software</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="difficultyLevel" class="form-label">Difficulty Level</label>
+                                            <select class="form-select" id="difficultyLevel" required>
+                                                <option value="beginner">Beginner</option>
+                                                <option value="intermediate">Intermediate</option>
+                                                <option value="advanced">Advanced</option>
+                                                <option value="expert">Expert</option>
+                                            </select>
+                                        </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <h5>Description</h5>
+                                    <textarea class="form-control" id="listingDescription" rows="4" required></textarea>
+                                    <div class="form-text">Provide a detailed description of your item or service.</div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <h5>Photos</h5>
+                                    <div class="mb-3">
+                                        <label for="listingPhotos" class="form-label">Upload Photos (up to 5)</label>
+                                        <input class="form-control" type="file" id="listingPhotos" multiple accept="image/*">
+                                    </div>
+                                    <div class="row row-cols-2 row-cols-md-4 g-2 mt-2">
+                                        <div class="col">
+                                            <div class="border rounded p-2 text-center bg-light" style="height: 100px; display: flex; align-items: center; justify-content: center;">
+                                                <i class="bi bi-plus-lg fs-3 text-muted"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <h5>Contact & Location</h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="listingLocation" class="form-label">Location</label>
+                                            <input type="text" class="form-control" id="listingLocation" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="listingPhone" class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" id="listingPhone">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="localPickup">
+                                                <label class="form-check-label" for="localPickup">
+                                                    Local pickup only
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button type="button" class="btn btn-outline-secondary" onclick="showPage('marketplace'); return false;">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Create Listing</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <div id="contact-us" class="demo-container" style="display: none;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-5">Contact Us</h2>
+                    
+                    <div class="row mb-5">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <div class="card h-100 text-center p-4">
+                                <div class="card-body">
+                                    <i class="bi bi-geo-alt text-primary" style="font-size: 2.5rem;"></i>
+                                    <h5 class="mt-3">Our Location</h5>
+                                    <p class="text-muted">123 Innovation Street<br>Tech Hub, Building 4<br>Bangalore, 560001</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <div class="card h-100 text-center p-4">
+                                <div class="card-body">
+                                    <i class="bi bi-envelope text-primary" style="font-size: 2.5rem;"></i>
+                                    <h5 class="mt-3">Email Us</h5>
+                                    <p class="text-muted">info@communityexchange.com<br>support@communityexchange.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 text-center p-4">
+                                <div class="card-body">
+                                    <i class="bi bi-telephone text-primary" style="font-size: 2.5rem;"></i>
+                                    <h5 class="mt-3">Call Us</h5>
+                                    <p class="text-muted">+91 80 1234 5678<br>+91 80 8765 4321</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-4">Send Us a Message</h4>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="contactName" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control" id="contactName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="contactEmail" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="contactEmail" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="contactSubject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="contactSubject" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="contactMessage" class="form-label">Message</label>
+                                        <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <h4 class="text-center mb-4">Find Us On Map</h4>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9932177674765!2d77.59791857496957!3d12.970986987384188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1688492300012!5m2!1sen!2sus" 
+                                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="about-us" class="demo-container" style="display: none;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-5">About Us</h2>
+                    
+                    <div class="card mb-5">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-4 mb-md-0">
+                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Krishika Sureka" class="rounded-circle img-fluid mb-3" style="max-width: 180px;">
+                                    <h4>Krishika Sureka</h4>
+                                    <p class="text-muted">Founder & CEO</p>
+                                    <div class="social-icons mt-3">
+                                        <a href="#" class="me-2 text-dark"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="me-2 text-dark"><i class="bi bi-twitter"></i></a>
+                                        <a href="#" class="me-2 text-dark"><i class="bi bi-envelope"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5 class="mb-3">Our Mission</h5>
+                                    <p>At Community Exchange, we believe in the power of shared knowledge and collaborative innovation. Our platform was founded by Krishika Sureka with the vision of creating a space where creators, makers, and developers can come together to share projects, exchange ideas, and build a supportive community.</p>
+                                    
+                                    <h5 class="mb-3 mt-4">About Krishika</h5>
+                                    <p>Krishika Sureka is a passionate technologist with over 8 years of experience in software development and hardware engineering. After working with several tech startups and recognizing the need for a dedicated platform for project sharing, she founded Community Exchange in 2022.</p>
+                                    <p>With a background in Computer Science and Electronics Engineering, Krishika brings a unique perspective to the maker community. Her vision is to democratize access to technical knowledge and foster innovation through collaboration.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-5">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title">Our Vision</h5>
+                                    <p class="card-text">To create the world's most vibrant community of makers and innovators, where knowledge is freely shared and collaboration leads to groundbreaking projects.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title">Our Values</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">🤝 <strong>Collaboration</strong> - We believe in the power of working together</li>
+                                        <li class="mb-2">🔍 <strong>Transparency</strong> - Open and honest communication</li>
+                                        <li class="mb-2">💡 <strong>Innovation</strong> - Pushing boundaries and exploring new ideas</li>
+                                        <li class="mb-2">🌱 <strong>Sustainability</strong> - Creating with environmental consciousness</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <h5 class="card-title">Join Our Community</h5>
+                            <p>We're always looking for passionate individuals to join our community. Whether you're a seasoned developer, a hardware enthusiast, or just starting your journey in the world of making, there's a place for you here.</p>
+                            <div class="text-center mt-4">
+                                <button class="btn btn-primary" onclick="showPage('register'); return false;">Create an Account</button>
+                                <button class="btn btn-outline-primary ms-2" onclick="showPage('marketplace'); return false;">Browse Projects</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<div class="modal fade" id="collaboratorModal" tabindex="-1" aria-labelledby="collaboratorModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="collaboratorModalLabel">Join as Collaborator</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-muted mb-3">Tell us how you'd like to contribute to this project. The project owner will review your request.</p>
+                <form id="collaboratorRequestForm">
+                    <div class="mb-3">
+                        <label for="collaborationRole" class="form-label">Your Role</label>
+                        <select class="form-select" id="collaborationRole" required>
+                            <option value="" selected disabled>Select your role</option>
+                            <option value="developer">Developer</option>
+                            <option value="designer">Designer</option>
+                            <option value="tester">Tester</option>
+                            <option value="documentation">Documentation</option>
+                            <option value="hardware">Hardware Engineer</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="collaborationSkills" class="form-label">Relevant Skills</label>
+                        <input type="text" class="form-control" id="collaborationSkills" placeholder="e.g., Python, Arduino, PCB Design" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="collaborationMessage" class="form-label">Why do you want to join?</label>
+                        <textarea class="form-control" id="collaborationMessage" rows="3" placeholder="Describe how you can contribute to this project..." required></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="collaborationTerms" required>
+                        <label class="form-check-label" for="collaborationTerms">I agree to the project's collaboration guidelines</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="submitCollaborationRequest()">Submit Request</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>
